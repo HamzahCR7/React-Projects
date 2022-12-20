@@ -47,3 +47,25 @@ class Person extends Human {
 const person=new Person();
 person.category();//we can access methods of parent class now
 person.details();
+
+//updated class and its properties
+
+class Animal{
+  legs=4;
+  character=()=>{//using arrow function inside class
+  console.log(this.legs)//still can use this and avoid constructor
+  }
+}
+
+class Dog extends Animal{
+  whatItdoes="bark"
+  nature=()=>{
+    console.log("Dog has ",this.legs,"legs and it ",this.whatItdoes);//no need of constructor and super still we can access parent class properties
+  }
+}
+const animal=new Animal();
+// animal.character();
+const dog=new Dog();
+dog.character();
+dog.nature();
+
