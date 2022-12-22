@@ -105,3 +105,16 @@ const ob1={
 }
 const ob2={...ob1};
 console.log(ob2==ob1);
+//creating a dynamic element
+ document.getElementById('btn').addEventListener('click',fun)
+function fun(){
+  let isTrue=false;
+
+  if(!isTrue){
+    isTrue=!isTrue;
+  console.log("working...")
+  const para=document.createElement('p');
+  para.textContent="BTN is working";
+  document.getElementById('root').appendChild(para)
+  }
+}
