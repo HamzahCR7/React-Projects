@@ -7,19 +7,19 @@ function App() {
       id: "exp1",
       title: "Car Insurance",
       price: "60000",
-      currentDate: new Date(2022, 12, 26),
+      currentDate: new Date("10/24/2022"),
     },
     {
       id: "exp2",
       title: "Mobile Purchase",
       price: "7000",
-      currentDate: new Date(2022, 12, 25),
+      currentDate: new Date("12/26/2022"),
     },
     {
       id: "exp3",
       title: "Vegetable Buy",
       price: "100",
-      currentDate: new Date(2022, 12, 29),
+      currentDate: new Date("05/05/1990"),
     },
   ];
   return (
