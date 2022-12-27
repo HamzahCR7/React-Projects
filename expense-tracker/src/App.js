@@ -1,5 +1,5 @@
 import './App.css';
-import ExpenseItem from './components/ExpenseItem';
+import Expenses from './components/Expenses/Expenses';
 
 function App() {
   const expenses = [
@@ -21,24 +21,16 @@ function App() {
       price: "100",
       currentDate: new Date("05/05/1990"),
     },
+    {
+      id:"exp4",
+      title:"Mobile Recharge",
+      price:"50",
+      currentDate:new Date("05/05/2010"),
+    }
   ];
   return (
     <div>
-      <ExpenseItem
-        title={expenses[0].title}
-        price={expenses[0].price}
-        currentDate={expenses[0].currentDate}
-      ></ExpenseItem>
-      <ExpenseItem
-        title={expenses[1].title}
-        price={expenses[1].price}
-        currentDate={expenses[1].currentDate}
-      ></ExpenseItem>
-      <ExpenseItem
-        title={expenses[2].title}
-        price={expenses[2].price}
-        currentDate={expenses[2].currentDate}
-      ></ExpenseItem>
+      <Expenses items={expenses}/>
     </div>
   );
 }
